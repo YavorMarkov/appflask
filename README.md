@@ -91,4 +91,4 @@ The Jenkinsfile defines a comprehensive CI/CD pipeline for automating the build,
 
  🚧 Under development 🚧 
  
- 🔍 On the lookout for job opportunities in DevOps Skils. Interested in joining a dynamic team! 🔍
+ 🔍 Actively seeking job opportunities to leverage my DevOps skills. Eager to contribute to a dynamic team 🔍
