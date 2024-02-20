@@ -1,0 +1,4 @@
+Flask
+Werkzeug  # Adjust this version as necessary
+pytest 
+gunicorn
