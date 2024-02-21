@@ -48,21 +48,10 @@
                 }
             }
 
-            // stage('Test') {
-            //     steps {
-            //         script {
-            //             sh "docker exec ${env.CONTAINER_NAME} python -m pytest"
-            //             sh "echo 'true' > tests_passed"
-            //         }
-            //     }
-            // }
+
 
             stage('Push Image') {
-                // // when {
-                // //     expression {
-                // //         readFile('tests_passed').trim() == 'true'
-                // //     }
-                // }
+
                 steps {
                     script {
                         // Logging in to Docker Hub and pushing the image using stored Docker Hub credentials
@@ -91,11 +80,7 @@
             // }
 
                 stage('Deploy to Google Cloud Run') {
-            //     when {
-            //         expression {
-            //             readFile('tests_passed').trim() == 'true'
-            //         }
-            //     }
+
                 steps {
                     script {
                         // Securely handling Google Cloud credentials
