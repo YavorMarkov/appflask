@@ -42,7 +42,7 @@
                 steps {
                     script {
                         def containerName = "${env.BASE_CONTAINER_NAME}-${env.BUILD_ID}"
-                        sh "docker run -d --name ${containerName} -p 8080:8080 ${env.IMAGE_NAME}"
+                        sh "docker run -d --name ${containerName} -p 5000:5000 ${env.IMAGE_NAME}"
                         env.CONTAINER_NAME = containerName
                     }
                 }
