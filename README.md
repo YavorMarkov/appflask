@@ -9,6 +9,21 @@ A Continuous Integration and Continuous Deployment (CI/CD) pipeline, set up in a
 - **Google Cloud Service Account Key:** `Ensure the Jenkins user has the appropriate permissions to use the Google Cloud service account key specified by GOOGLE_CLOUD_SERVICE_ACCOUNT_KEY. This key is crucial for authenticating with Google Cloud services during deployment.`
 - **Docker Hub Credentials:** `Verify that the Jenkins user has the correct rights to use Docker Hub credentials (DOCKER_CREDENTIALS_ID) for pushing images. This involves ensuring the credentials stored in Jenkins allow for authentication with Docker Hub to push the Docker image.`
 
+## Required Google Cloud IAM Roles for Jenkins Pipeline
+
+The Jenkins pipeline's seamless operation, encompassing Docker image building, container testing, image pushing to Docker Hub, and deployment to Google Cloud Run, mandates specific IAM roles for the service account:
+
+## Container Registry Roles
+- **Storage Admin (`roles/storage.admin`)**: Essential for uploading Docker images to Google Container Registry (GCR).
+
+## Cloud Run Roles
+- **Cloud Run Admin (`roles/run.admin`)**: Required for managing services on Cloud Run, including creating, updating, and deleting services.
+- **IAM Service Account User (`roles/iam.serviceAccountUser`)**: Allows the service account to deploy services by acting on behalf of other service accounts.
+
+## Optional Roles
+- **Viewer (`roles/viewer`)**: Provides read-only access across most Google Cloud Platform resources, beneficial for monitoring and logging purposes.
+- **Logging Admin (`roles/logging.admin`)**: Grants permissions to configure logs and metrics, essential for managing logging and monitoring resources.
+
 
 
 ## Environment Configuration:
