@@ -46,7 +46,7 @@ The pipeline consists of the following stages:
 
 ### 3. Run Container
 
-- **Action**: Runs a Docker container from the built image, exposing it on port 8080.
+- **Action**: Runs a Docker container from the built image, exposing it on port 5000.
 - **Details**: Generates a unique name for the container based on the build ID.
 
 ### 4. Push Image
