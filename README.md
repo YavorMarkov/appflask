@@ -35,11 +35,15 @@ The pipeline uses several environment variables for configuration:
 
 The pipeline consists of the following stages:
 
+
+### 0. Overview 
+![Checkout Screenshot](screenshots/jenkins_pipeline/1.%20AppFlaskCICDView.JPG)
+
 ### 1. Checkout
 
 - **Action**: Clones the source code from the GitHub repository specified by the URL, using the 'main' branch.
 Check out the [Checkout stage](https://github.com/YavorMarkov/appflask/blob/main/Jenkinsfile#L16-L21) of the Jenkinsfile.
-![Checkout Screenshot](screenshots/jenkins_pipeline/1.%20AppFlaskCICDView.JPG)
+
 ![Checkout Screenshot](screenshots/checkout/3.%20Checkout.JPG)
 
 ### 2. Build Docker Image
