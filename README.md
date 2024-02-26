@@ -73,7 +73,7 @@ Check out the [Push Image stage](https://github.com/YavorMarkov/appflask/blob/ma
 
 
 ### 5. Deploy to Google Cloud Run
-Check out the [Deploy to Google Cloud Run stage](https://github.com/YavorMarkov/appflask/blob/main/Jenkinsfile#L53-L63) of the Jenkinsfile.
+Check out the [Deploy to Google Cloud Run stage](https://github.com/YavorMarkov/appflask/blob/main/Jenkinsfile#L82-L114) of the Jenkinsfile.
 
 - **Action**: Deploys the Docker image to Google Cloud Run as a managed service.
 - **Details**: Authenticates with Google Cloud using a service account key, sets up Docker to use `gcloud` as a credential helper, and deploys the service with specified resources for cost optimization.
