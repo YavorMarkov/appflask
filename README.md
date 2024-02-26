@@ -38,7 +38,7 @@ The pipeline consists of the following stages:
 ### 1. Checkout
 
 - **Action**: Clones the source code from the GitHub repository specified by the URL, using the 'main' branch.
-![Checkout Screenshot](screenshots/checkout/jenkinst_pipeline/1.%20AppFlaskCICDView.JPG)
+![Checkout Screenshot](screenshots/jenkinst_pipeline/1.%20AppFlaskCICDView.JPG)
 ![Checkout Screenshot](screenshots/checkout/3.%20Checkout.JPG)
 
 ### 2. Build Docker Image
