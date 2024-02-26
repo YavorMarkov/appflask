@@ -59,6 +59,7 @@ Check out the [Build Docker Image stage](https://github.com/YavorMarkov/appflask
 
 - **Action**: Runs a Docker container from the built image, exposing it on port 5000.
 - **Details**: Generates a unique name for the container based on the build ID.
+![Checkout Screenshot](screenshots/run_container/6.%20Run_Container.JPG)
 
 ### 4. Push Image
 
