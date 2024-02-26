@@ -56,6 +56,7 @@ Check out the [Build Docker Image stage](https://github.com/YavorMarkov/appflask
 
 
 ### 3. Run Container
+Check out the [Run Container Image stage](https://github.com/YavorMarkov/appflask/blob/main/Jenkinsfile#L41-L49) of the Jenkinsfile.
 
 - **Action**: Runs a Docker container from the built image, exposing it on port 5000.
 - **Details**: Generates a unique name for the container based on the build ID.
