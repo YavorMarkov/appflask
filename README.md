@@ -52,6 +52,7 @@ Check out the [Build Docker Image stage](https://github.com/YavorMarkov/appflask
 - **Action**: Builds a Docker image with a unique tag comprising the Docker username, a random number, and the Jenkins build ID.
 - **Details**: Retrieves the Docker username from Jenkins credentials.
 ![Checkout Screenshot]( screenshots/build_docker_image/4.%20Build%20Docker%20Image.JPG ) 
+![Checkout Screenshot]( screenshots/build_docker_image/5.%20Build%20Docker%20Image.JPG ) 
 
 
 ### 3. Run Container
