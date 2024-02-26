@@ -81,6 +81,9 @@ Check out the [Deploy to Google Cloud Run stage](https://github.com/YavorMarkov/
 ![Checkout Screenshot](screenshots/deploy_to_gcr/10.%20Deploy%20to%20Cloud.JPG)
 ![Checkout Screenshot](screenshots/deploy_to_gcr/11.%20Deploy%20to%20Cloud.JPG)
 ![Checkout Screenshot](screenshots/deploy_to_gcr/GCR1.JPG)
+![Checkout Screenshot](screenshots/deploy_to_gcr/GCR2.JPG)
+![Checkout Screenshot](screenshots/deploy_to_gcr/GCR3.JPG)
+
 
 
 ### Key Elements:
