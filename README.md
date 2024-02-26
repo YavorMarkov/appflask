@@ -63,7 +63,7 @@ Check out the [Run Container Image stage](https://github.com/YavorMarkov/appflas
 ![Checkout Screenshot](screenshots/run_container/6.%20Run_Container.JPG)
 
 ### 4. Push Image
-Check out the [Push Image Image stage](https://github.com/YavorMarkov/appflask/blob/main/Jenkinsfile#L53-L63) of the Jenkinsfile.
+Check out the [Push Image stage](https://github.com/YavorMarkov/appflask/blob/main/Jenkinsfile#L53-L63) of the Jenkinsfile.
 
 - **Action**: Pushes the built Docker image to Docker Hub.
 - **Details**: Uses Docker Hub credentials stored in Jenkins for authentication.
