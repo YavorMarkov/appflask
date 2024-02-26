@@ -77,6 +77,10 @@ Check out the [Deploy to Google Cloud Run stage](https://github.com/YavorMarkov/
 
 - **Action**: Deploys the Docker image to Google Cloud Run as a managed service.
 - **Details**: Authenticates with Google Cloud using a service account key, sets up Docker to use `gcloud` as a credential helper, and deploys the service with specified resources for cost optimization.
+![Checkout Screenshot](screenshots/deploy_to_gcr/9.%20Deploy%20to%20Cloud.JPG)
+![Checkout Screenshot](screenshots/deploy_to_gcr/10.%20Deploy%20to%20Cloud.JPG)
+![Checkout Screenshot](screenshots/deploy_to_gcr/11.%20Deploy%20to%20Cloud.JPG)
+
 
 ### Key Elements:
 **Port Configuration:** 
