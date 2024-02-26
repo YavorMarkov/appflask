@@ -36,7 +36,7 @@ The pipeline uses several environment variables for configuration:
 The pipeline consists of the following stages:
 
 
-### 0. Overview 
+### 0. Pipeline Overview:
 ![Checkout Screenshot](screenshots/jenkins_pipeline/1.%20AppFlaskCICDView.JPG)
 
 ### 1. Checkout
