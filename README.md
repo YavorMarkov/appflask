@@ -105,6 +105,15 @@ Consistency and Compatibility:
 ## Outcome:
 This configuration ensures the Flask application's smooth deployment and operation on Google Cloud Run by standardizing port 8080 across the project's Docker and Flask settings. This standardized approach aids in meeting cloud deployment criteria and enhancing the application's accessibility and functionality in the cloud environment.
 
+# Permissions Summary
+
+The successful deployment process hinges on the Jenkins user having appropriate permissions for two key sets of credentials:
+
+- **Google Cloud Service Account Key**: Access to the `GOOGLE_CLOUD_SERVICE_ACCOUNT_KEY` is vital for authenticating with Google Cloud services during deployment stages.
+
+- **Docker Hub Credentials**: Proper rights to utilize Docker Hub credentials, identified by `DOCKER_CREDENTIALS_ID`, are crucial. These credentials must be accurately configured within Jenkins to enable Docker image pushing to Docker Hub.
+
+
 
 ## Deployment Details
 
