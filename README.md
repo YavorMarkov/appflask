@@ -38,6 +38,7 @@ The pipeline consists of the following stages:
 ### 1. Checkout
 
 - **Action**: Clones the source code from the GitHub repository specified by the URL, using the 'main' branch.
+![Checkout Screenshot](screenshots/checkout/checkout_screenshot.png)
 
 ### 2. Build Docker Image
 
