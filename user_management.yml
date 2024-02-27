@@ -1,0 +1,39 @@
+---
+- name: User management playbook
+  hosts: all
+  become: yes
+  vars:
+    users_to_create:
+      - username: john_doe
+        password: "{{ 'putherepassword' | password_hash('sha512') }}"
+        state: present
+        ssh_key: "YOUR_SSH_PUBLIC_KEY_HERE"
+    users_to_remove:
+      - username: remove_user
+        state: absent
+
+  tasks:
+    - name: Ensure users are added
+      user:
+        name: "{{ item.username }}"
+        password: "{{ item.password | default(omit) }}"
+        state: "{{ item.state }}"
+        create_home: yes
+        shell: /bin/bash
+      with_items: "{{ users_to_create }}"
+      when: item.state == 'present'
+
+    - name: Set authorized key for the user
+      authorized_key:
+        user: "{{ item.username }}"
+        state: present
+        key: "{{ item.ssh_key }}"
+      with_items: "{{ users_to_create }}"
+      when: item.state == 'present' and item.ssh_key is defined
+
+    - name: Ensure users are removed
+      user:
+        name: "{{ item.username }}"
+        state: "{{ item.state }}"
+      with_items: "{{ users_to_remove }}"
+      when: item.state == 'absent'
